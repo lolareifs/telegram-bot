@@ -106,7 +106,7 @@ class App
                 /** Send Telegram Message to client */
                 $this->helperData->sendPhoto($chatId, $dataFrame->getCurrentFrame(), $message, $dataFrame->getUrlApi());
             }catch (\Exception $e){
-                $logger->error(print_r($clientAnswer, true));
+                $logger->error(print_r($e, true));
             }
 
         }
